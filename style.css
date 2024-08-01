@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+    color: rgb(255, 230, 0);
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-image: url("./img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    
+.container{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    padding: 15px;
+    border-radius: 10px;
+    display: grid;
+    background-color: #000000f3;
+    grid-template-columns: repeat (5,70px);
+    opacity: 0.95;
+}
+    
+input{
+    grid-column: span 5;
+    height: 70px;
+    width: 20rem;
+    background-color:#e8f5fc;
+    box-shadow: inset 6px 6px 10px rgba(164, 216, 243, 0.5),
+    inset -6px -6px 10px rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 10px;
+    color: rgb(70,70,70);
+    font-size: 28px;
+    text-align: end;
+    margin: auto;
+    margin-top:40px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+button{
+    height: 48px;
+    width: 48px;
+    background-color: #c2d5df;
+    box-shadow: 1px 1px 5px rgba(164, 216, 243, 0.5), -1px -1px 5px rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 50px;
+    margin: 8px;
+    font-size: 16px;
+    color: black;
+
+}
+    
+button:hover{
+    transform: translateY(-2px);
+}
+
+button:active:focus {
+    transform: translateY(2px);
+    box-shadow: inset 6px 6px 10px rgba(164, 216, 243, 0.5), inset -6px -6px 10px rgba(255, 255, 255, 0.6);
+}
+    
+.equal {
+    background-color: green;
+    color: white;
+    grid-column-start: 5;
+}
+    
+.ac_button{
+    color: white;
+    background-color: red;
+}
+
+.op_button{
+    color: white;
+    background-color: #ff9501;
+}
+
+.func_button{
+    color: white;
+    background-color: grey;
+}
+
+.footer-content{
+    text-align: center;
+}
+
+.footer-icons ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+
+.footer-icons ul li {
+    padding: 0 15px;
+}
